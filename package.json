@@ -1,0 +1,29 @@
+{
+  "name": "weatherCommander",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "weatherCommander": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "clear": "0.0.1",
+    "clui": "^0.3.6",
+    "figlet": "^1.2.0",
+    "github": "^9.2.0",
+    "inquirer": "^1.2.3",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0",
+    "node-fetch": "^1.7.1",
+    "preferences": "^0.2.1",
+    "simple-git": "^1.73.0",
+    "touch": "^1.0.0"
+  }
+}
