@@ -41,25 +41,16 @@ function main() {
 
 function getZipcode() {
   inquirer.prompt(question).then(function(answer) {
+    //TODO validate answer to question is an 5 digit zipcode, not a string!!!
     getWeather(answer);
   });
 }
 
 function getWeather(zipcode) {
+  //Run fancy status spinner .start() to run it, .stop() to end it
   var status = new Spinner(chalk.blue.underline.bold("Getting the Weather..."));
   status.start();
-  fetch(weatherURL)
-    .then(resp => resp.json())
-    .then(function(data) {
-      // Here you get the data to modify as you please
-      console.log("\n");
-      console.log(data.main);
-      status.stop();
-    })
-    .catch(function(error) {
-      // If there is any error you will catch them here
-      console.log(error);
-    });
+  //Get weather data and console.log out the temp in fahrenheit NOT Celcius
 }
 
 main();
