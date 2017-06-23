@@ -9,9 +9,7 @@ var figlet = require("figlet");
 var inquirer = require("inquirer");
 var Preferences = require("preferences");
 var Spinner = CLI.Spinner;
-var GitHubApi = require("github");
 var _ = require("lodash");
-var git = require("simple-git")();
 var touch = require("touch");
 var fs = require("fs");
 var fetch = require("node-fetch");
@@ -53,4 +51,6 @@ function getWeather(zipcode) {
   //Get weather data and console.log out the temp in fahrenheit NOT Celcius
 }
 
+
+//TODO stretch goal ask user if they have another zipcode, or if they would like to end
 main();
